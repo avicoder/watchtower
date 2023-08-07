@@ -54,7 +54,7 @@ Please store all the passwords in a safe place and delete the temporary password
 ## Configuration
 You need to register Slack-Watchman as an app for your Slack workspace. Follow this [Requirements Guide](https://github.com/PaperMtn/slack-watchman#requirements) to successfully register your app in Slack and retrieve the required API token.
 
-Once you retrieved the API token you simply add it the `sw-runner.sh`
+Once you retrieved the API token you simply add it the `runner.sh`
 ```
 # fuSWRUN "Workspace_Name" "OAuthToken"
 fuSWRUN "slack_workspace" "xoxp-1111111111111-2222222222222-3333333333333-444be444444444444444444444444444"
@@ -64,9 +64,9 @@ The `OAuthToken` is the API token you will be provided via the Slack app setting
 Following this method you can add as many workspaces as you like and all will be monitored on a daily basis.
 
 ## Run Slack-Watchman
-If this is a primary run with Slack-Watchman you can set the timeframe in `sw-runner.sh` to `--timeframe a` which is the default and will scan all past events. It's recommended however to change this to `--timeframe d` which will only scan the previous 24 hours.
+If this is a primary run with Slack-Watchman you can set the timeframe in `runner.sh` to `--timeframe a` which is the default and will scan all past events. It's recommended however to change this to `--timeframe d` which will only scan the previous 24 hours.
 
-For testing purposes you can run Slack-Watchman simply via `sw-runner.sh`. But keep in mind that each run will account against the API, once too hot your app will be put into cool off mode. Running once daily per registered Slack app is recommended.
+For testing purposes you can run Slack-Watchman simply via `runner.sh`. But keep in mind that each run will account against the API, once too hot your app will be put into cool off mode. Running once daily per registered Slack app is recommended.
 
 ## Upgrades
 To upgrade just follow these simple steps from within the repo folder:
