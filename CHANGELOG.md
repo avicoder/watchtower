@@ -1,6 +1,8 @@
 # Changelog
 
-# 20210111
+## Adding extended support 3.0.11
+I liked the idea and wanted to continue this archived project. Built the images and pushed it to dockerhub under avicoder.
+
 ## Add Slack-Watchman 3.0.10
 Slack-Watchman 3.0.10 uses different field names which will require you to download `watchtower_kibana_objects.ndjson.zip` and import it into Kibana.
 All Kibana objects were adjusted accordingly.

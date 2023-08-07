@@ -28,7 +28,7 @@ docker run -t --name runner \
               --read-only \
               -v /data/runner/log:/var/log/runner:rw \
               --env SLACK_WATCHMAN_TOKEN="$SLACK_WATCHMAN_TOKEN" \
-              dtagdevsec/runner-wt:latest ash -c "$SLACK_WATCHMAN_COMMAND"
+              avicoder/runner-wt:latest ash -c "$SLACK_WATCHMAN_COMMAND"
 
 echo "### Done processing: $SLACK_WATCHMAN_NAME"
 echo

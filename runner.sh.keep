@@ -28,7 +28,7 @@ docker run -t --name runner \
               --read-only \
               -v /data/runner/log:/var/log/runner:rw \
               --env SLACK_WATCHMAN_TOKEN="$SLACK_WATCHMAN_TOKEN" \
-              dtagdevsec/runner-wt:latest ash -c "$SLACK_WATCHMAN_COMMAND"
+              avicoder/runner-wt:latest ash -c "$SLACK_WATCHMAN_COMMAND"
 
 echo "### Done processing: $SLACK_WATCHMAN_NAME"
 echo
@@ -55,7 +55,7 @@ docker run -t --name runner \
               -v /data/runner/log:/var/log/runner:rw \
               --env GITLAB_WATCHMAN_URL="$GITLAB_WATCHMAN_URL" \
               --env GITLAB_WATCHMAN_TOKEN="$GITLAB_WATCHMAN_TOKEN" \
-              dtagdevsec/runner-wt:latest ash -c "$GITLAB_WATCHMAN_COMMAND"
+              avicoder/runner-wt:latest ash -c "$GITLAB_WATCHMAN_COMMAND"
 
 echo "### Done processing: $GITLAB_WATCHMAN_NAME"
 echo

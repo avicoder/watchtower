@@ -6,19 +6,19 @@ services:
 ## Elasticsearch service
   elasticsearch:
     build: elasticsearch/.
-    image: "dtagdevsec/elasticsearch-wt:latest"
+    image: "avicoder/elasticsearch-wt:latest"
 
 ## Kibana service
   kibana:
     build: kibana/.
-    image: "dtagdevsec/kibana-wt:latest"
+    image: "avicoder/kibana-wt:latest"
 
 ## Logstash service
   logstash:
     build: logstash/.
-    image: "dtagdevsec/logstash-wt:latest"
+    image: "avicoder/logstash-wt:latest"
 
 ## Runner service
   runner:
     build: runner/.
-    image: "dtagdevsec/runner-wt:latest"
+    image: "avicoder/runner-wt:latest"

@@ -1,5 +1,16 @@
 # Watchtower
+### Forked of telekom-security/watchtower 
+#### Thanks.
 
+I liked the project, however it's development was stopped and no progress was made in last 3 years,
+
+To continue, I built the images from scratch which were deleted from [dtagdevsec](https://hub.docker.com/u/dtagdevsec) dockerhub space. Now you can access these images from [avicoder](https://hub.docker.com/u/avicoder). 
+
+#### Note: please use Debian 10.x only to run `./setup.sh` as root.
+Dashboard will be available at https://localhost:5601
+
+----
+### Read Me
 Watchtower uses the [Elastic Stack](https://www.elastic.co/products/) and [Slack-Watchman](https://github.com/PaperMtn/slack-watchman) by [@PaperMtn](https://github.com/PaperMtn).
 
 Slack is a great tool for easy and convenient team collaboration and growing rapidly in popularity with home office becoming more widespread. As with other collaboration platforms, i.e. GitHub, it may happen that sensitive information get posted by accident or convenience while it should have never been posted.
